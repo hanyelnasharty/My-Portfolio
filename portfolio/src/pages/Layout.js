@@ -1,7 +1,13 @@
 import React from "react"
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 const Layout = () => {
+
+    const location = useLocation();
+
+    const isActive = (pathname) => {
+        return pathname === location.pathname ? 'active' : '';
+    }
     return (
         <>
             <div className="nav-container">
@@ -11,19 +17,19 @@ const Layout = () => {
                         <img id="profile" src="profile.jpg" alt=""/>
                     </li>
                     <li>
-                        <Link className="link current" to="/">Home</Link>
+                        <Link  className={isActive('/')} id="nav-item" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link className="link current" to="/bio">Biography</Link>
+                        <Link  className={isActive('/bio')} id="nav-item" to="/bio">Biography</Link>
                     </li>
                     <li>
-                        <Link className="link current" to='/skills'>Skills</Link>
+                        <Link  className={isActive('/skills')} id="nav-item" to='/skills'>Skills</Link>
                     </li>
                     <li>
-                        <Link className="link current" to="/projects">Projects</Link>
+                        <Link  className={isActive('/projects')} id="nav-item" to="/projects">Projects</Link>
                     </li>
                     <li>
-                        <Link className="link current" to="/interests">Interests</Link>
+                        <Link  className={isActive('/interests')} id="nav-item" to="/interests">Interests</Link>
                     </li>
                 </ul>
             </nav>
