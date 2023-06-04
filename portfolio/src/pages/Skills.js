@@ -20,7 +20,7 @@ const Skills = () => {
                     <img className="logo" src="jquery.png" alt="" />
                     <img className="logo" src="mongodb.png" alt="" />
                 </div>
-               
+                <h2 id="tools"><a href="https://docs.google.com/document/d/1qxBjEfIZtuMUlZAJYylX8zlPFHXxgciX/edit#heading=h.gjdgxs" target="_blank" rel="noreferrer">RESUME</a></h2>
             </div>
         </>
     )

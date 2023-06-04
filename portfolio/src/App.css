@@ -61,6 +61,16 @@ span {
   font-size: medium;
 }
 
+
+h2 a .resume:hover {
+  color: blue;
+  background-color: blue;
+}
+
+a:hover {
+  color: blue;
+}
+
 p {
   line-height: 200%;
   font-size: large;
