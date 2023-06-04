@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "http://{hanyelnasharty}.github.io/{My-Portfolio}",
+  "homepage": "http://hanyelnasharty.github.io/{My-Portfolio}",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
